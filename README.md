@@ -21,6 +21,13 @@ The figure bellow show as the phisical sensors must be connected on Raspberry Pi
 
 ![Image of Raspberry Pi Eletronic Schematic](hackaton-raspberry.png)
 
+## Run the project
+To run, you need the Python 3 installed on Raspberry Pi. also you need to give the execution permission:
+
+'''bash
+$ chmod 755 weather_base_station.py
+$ ./weather_base_station.py
+'''
 
 ## Related Projects
 
