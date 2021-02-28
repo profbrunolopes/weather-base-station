@@ -34,4 +34,4 @@ $ ./weather_base_station.py
 This project only receive the aquired data from Arduino Station and tore it on SQLite database and expose it on RESP API. A Arduino Station was developed to collect the data and a dashboard was also built in HTML5, CSS3, and JS that displays this data to the user by consuming a REST API exposed by this base station. For more details of the base station project or dashboard project, visit:
 
 * [Arduino Weather Station](https://github.com/profbrunolopes/weather-arduino-sensor)
-* [Weather Station Dashboard](http://google.com)
+* [Weather Station Dashboard](https://github.com/profbrunolopes/weather-dashboard)
