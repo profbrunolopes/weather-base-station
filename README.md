@@ -22,11 +22,15 @@ The figure bellow show as the phisical sensors must be connected on Raspberry Pi
 ![Image of Raspberry Pi Eletronic Schematic](hackaton-raspberry.png)
 
 ## Run the project
-To run, you need the Python 3 installed on Raspberry Pi. also you need to give the execution permission:
+To run, you need the Python 3 installed on Raspberry Pi and install the **New Relic Python Agent**. First it's necessary create a account on [New Relic](https://newrelic.com/) and follow the [New Relic instructions](https://docs.newrelic.com/docs/agents/python-agent/installation/standard-python-agent-install). The file **newrelic.ini** must be in the same folder of *weather_base_station.py* or you can create the environment variable *NEW_RELIC_CONFIG_FILE* pointing to **newrelic.ini** location. See the bellow example:
 
 ```bash
+#You must create the New Relic account first
+$ pip3 install newrelic
+$ newrelic-admin generate-config <YOUR_LICENSE_KEY> newrelic.ini
+$ export NEW_RELIC_CONFIG_FILE=<YOUR_NEWRELIC.INI_FILE_PATH>
 $ chmod 755 weather_base_station.py
-$ ./weather_base_station.py
+$ newrelic-admin run-program weather_base_station.py
 ```
 
 ## Related Projects
